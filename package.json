@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "haikro": "^1.4.0"
+    "haikro": "https://github.com/matthew-andrews/haikro/tarball/extra-debug"
   }
 }
