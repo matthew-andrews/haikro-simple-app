@@ -1,3 +1,5 @@
 language: node_js
 node_js:
 - '0.10'
+after_success:
+- test $TRAVIS_TAG != "false" && haikro build release --repository matthew-andrews/haikro-simple-app --github-token $TRAVIS_AUTH_TOKEN --tag TRAVIS_TAG --verbose
