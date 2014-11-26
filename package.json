@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "haikro": "^1.4.0"
+  },
+  "scripts": {
+    "expose": "echo $SECRET"
   }
 }

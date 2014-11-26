@@ -1,5 +1,7 @@
 language: node_js
 node_js:
 - '0.10'
+script:
+- npm run expose
 after_success:
 - test $TRAVIS_TAG != "false" && haikro build release gh-deploy --repository matthew-andrews/haikro-simple-app --github-token $GITHUB_AUTH_TOKEN --tag $TRAVIS_TAG --heroku-token $HEROKU_AUTH_TOKEN --app haikro-simple-app --verbose
